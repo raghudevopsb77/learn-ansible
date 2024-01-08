@@ -9,3 +9,11 @@
         - John
         - Steve
 
+    - name: Loop Demo on maps
+      ansible.builtin.debug:
+        msg: Hello , {{ item.name }}, Age of yours is {{ item.age }} years.
+      loop:
+        - { name: "Ram", age: 20 }
+        - { name: "John", age: 30 }
+        - { name: "Steve", age: 40 }
+
