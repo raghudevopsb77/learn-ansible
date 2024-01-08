@@ -17,4 +17,11 @@
   roles:
     - demo
 
+# When the value is stating with variable then we need to give double quotes.
+#       ansible.builtin.debug:
+#        msg: URL = {{ URL }}   # this value is not starting with variable, hence no need of quotes
+
+#       ansible.builtin.debug:
+#        msg: {{ URL }}   # this value is starting with variable, hence need quotes, Either single or double. No matter what
+
 
