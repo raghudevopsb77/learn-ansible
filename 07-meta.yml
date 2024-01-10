@@ -1,0 +1,5 @@
+- name: Demo on Role deps
+  hosts: localhost
+  roles:
+    - nginx
+
