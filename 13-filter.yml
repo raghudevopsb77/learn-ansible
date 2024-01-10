@@ -7,4 +7,6 @@
         dest: /tmp
         remote_src: yes
 
-
+    - name: Url split
+      ansible.builtin.debug:
+        msg: "{{ https://nginx.org/download/nginx-1.25.3.zip | urlsplit }}"
