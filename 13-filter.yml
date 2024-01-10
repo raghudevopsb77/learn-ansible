@@ -11,4 +11,4 @@
 
     - name: Url split
       ansible.builtin.debug:
-        msg: "{{ URL | splitext('/') }}"
+        msg: "{{ URL | split("/") }}"
